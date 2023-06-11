@@ -1,7 +1,8 @@
 ﻿Console.Write("Input number: ");
-int number =Math.Abs(Convert.ToInt32(Console.ReadLine()));
-int count = 0;
-while(count<=2* number)
+int number = Math.Abs(Convert.ToInt32(Console.ReadLine()));
+int count = -number;
+while (count <= number)
 {
-    Console.Write($"{-number + count++}, ");
+    Console.Write($"{count} ");
+    count++;
 }
