@@ -9,4 +9,4 @@ if (number == 5) Console.Write("It's Friday");
 if (number == 6) Console.Write("It's Saturday");
 if (number == 7) Console.Write("It's Sanday");
 if (number > 7) Console.Write("Such day isn't exist");
-if (number == 0) Console.Write("Such day isn't exist");
+if (number <= 0) Console.Write("Such day isn't exist");
