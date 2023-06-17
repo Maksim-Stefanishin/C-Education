@@ -3,7 +3,7 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 Console.WriteLine("Введите число: ");
-string number = Console.ReadLine();
+string number = Console.ReadLine()!;
 int NumberIndex = 2;
 int length = number.Length;
 if (length <= 2)
@@ -12,7 +12,7 @@ if (length <= 2)
 }
 else
 {
-    char digit2 = (number)[NumberIndex];
-    Console.WriteLine(digit2);
+    char digit3 = (number)[NumberIndex];
+    Console.WriteLine(digit3);
 }
 
