@@ -27,11 +27,11 @@ public class Task
             {
                 if(str == reverse)
                 {
-                    System.Console.Write($"{str} Полигонал");
+                    System.Console.Write($"{str} Палиндром");
                 }
                 else
                 {
-                    System.Console.Write($"{str} не полигонал");
+                    System.Console.Write($"{str} не палиндром");
                 }
             }
             else
