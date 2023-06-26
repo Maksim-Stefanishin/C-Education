@@ -13,17 +13,17 @@ int[] FillArrayWithRandomNumber(int size)
     return arr;
 }
 
-bool CheckNumber(int[] arr, int number)
-{
-    for (int i = 0; i < arr.Length; i++)
-    {
-        if (number == arr[i])
-        {
-            return true;
-        }
-    }
-    return false;
-}
+// bool CheckNumber(int[] arr, int number)
+// {
+//     for (int i = 0; i < arr.Length; i++)
+//     {
+//         if (number == arr[i])
+//         {
+//             return true;
+//         }
+//     }
+//     return false;
+// }
 
 System.Console.Write("Введите кол-во элементов массива: ");
 int length = Convert.ToInt32(Console.ReadLine());
