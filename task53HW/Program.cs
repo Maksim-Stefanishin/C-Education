@@ -1,10 +1,10 @@
-﻿// Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, и возвращает значение этого элемента или же указание, что такого элемента нет.
+﻿// Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
 
 // Например, задан массив:
 // 1 4 7 2
 // 5 9 2 3
 // 8 4 2 4
-// 17 -> такого числа в массиве нет
+// Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
 void FillMatrixWithRandom(int[,] matrix)
 {
@@ -38,15 +38,15 @@ int column = Convert.ToInt32(Console.ReadLine());
 int[,] matrix = new int[row, column];
 FillMatrixWithRandom(matrix);
 PrintMatrix(matrix);
-System.Console.WriteLine("Введите индекс a: ");
-int indexAinMatrix = Convert.ToInt32(Console.ReadLine());
-System.Console.WriteLine("Введите индекс b: ");
-int indexBinMatrix = Convert.ToInt32(Console.ReadLine());
-if (indexAinMatrix < 0 || indexAinMatrix > matrix.GetLength(0) || indexBinMatrix < 0 || indexBinMatrix > matrix.GetLength(1))
+
+double sum = 0;
+for (int j = 0; j < matrix.GetLength(1); j++)
 {
-    System.Console.WriteLine("Такого числа нет.");
-}
-else
-{
-    System.Console.WriteLine(matrix[indexAinMatrix, indexBinMatrix]);
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        sum = (sum + (matrix[i,j]));
+    }
+    sum = sum / row;
+    Console.WriteLine(String.Format("Среднеарефметическое  {0} столбца {1}", j,sum)); 
+    sum=0;       
 }
