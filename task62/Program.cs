@@ -4,11 +4,12 @@
 
 void RoadToNumber(int number)
 {
-    if (number == 1)
+    if (number == 0)
     {
-        System.Console.Write("1 ");
+        // System.Console.Write("1 "); при number == 1 прописывает 1
         return;
     }
+    
     RoadToNumber(number - 1);
     System.Console.Write($"{number} ");
 }
